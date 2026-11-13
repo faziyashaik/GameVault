@@ -1,0 +1,47 @@
+git init
+Creates a new Git repository in the current folder.
+
+git branch -M main
+Renames the current branch to main.
+
+git add <file>
+Stages a file so it is included in the next commit.
+
+git commit -m "message"
+Saves the staged changes as a commit with a message.
+
+git status
+Shows which files are modified, staged or untracked.
+
+git status --short
+Shows the same information in a compact form.
+
+git branch
+Lists all branches and marks the current one with a star.
+
+git branch feature
+Creates a new branch named feature.
+
+git switch <branch>
+Moves to the given branch.
+
+git merge --no-ff feature -m "message"
+Merges feature into the current branch and always creates a merge commit.
+
+git log --oneline --graph --decorate --all
+Shows the commit history as a graph with branch names.
+
+git check-ignore -v <path>
+Shows whether a path is ignored and which rule in .gitignore matched.
+
+git revert --no-edit HEAD
+Creates a new commit that undoes the last commit while keeping history.
+
+git remote add origin <URL>
+Connects the local repository to a GitHub repository.
+
+git remote -v
+Lists the remote URLs that are configured.
+
+git push -u origin <branch>
+Uploads a branch to GitHub and sets it to track the remote branch.
